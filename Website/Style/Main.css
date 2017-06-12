@@ -1,0 +1,135 @@
+﻿body {
+    width: 100%;
+    margin: 0px;
+}
+
+.pageHeader {
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: dashed 5px blueviolet;
+}
+hgroup
+{
+    margin:10px;
+}
+#mainNav
+{    
+    background-color: blueviolet;
+    border: double 3px white;
+}
+    #mainNav ul {
+        color: white;
+        display: inline-block;
+    }
+        #mainNav ul li {
+            display: inline-block;
+            border: solid 2px white;
+            padding: 10px;
+            margin-right: 10px;
+            font-size: larger;
+        }
+            #mainNav ul li:hover {
+                cursor: pointer;
+                background-color: rebeccapurple;
+                color: black;
+            }
+
+#subNav {
+    background-color: yellowgreen;
+    border: double 3px white;
+    width: 20%;
+    float: left;
+    display: block;
+}
+    #subNav ul {
+        color: white;
+        display: inline-block;
+    }
+
+        #subNav ul li {
+            display: inline-block;
+            border: solid 2px white;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+            #subNav ul li:hover {
+                cursor: pointer;
+                background-color: chartreuse;
+                color: black;
+            }
+
+.sideAdvert {
+    background-color: brown;
+    width: 19%;
+    float: right;
+    right: 0px;
+    display: inline-block;
+    height:400px;
+    font-size: x-large;
+    color: white;
+}
+.pageFooter
+{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    width:100%;
+}
+
+.BasicCanvas {
+    border: solid 2px black;
+    background-color:whitesmoke;
+    margin-left:20px;
+}
+
+#ElephantPic {
+    border: dashed 10px black;
+    margin-left:10px;
+}
+.Animate {
+  
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
+}
+
+
+.ElephantPicForTransform:hover {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg); /** Safari & Chrome **/
+    -o-transform: rotate(180deg); /** Opera **/
+    -moz-transform: rotate(180deg); /** Firefox **/
+}
+
+.ElephantPicForTransform {
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg); /** Safari & Chrome **/
+    -o-transform: rotate(20deg); /** Opera **/
+    -moz-transform: rotate(20deg); /** Firefox **/
+}
+
+#ElephantMover:hover .ElephantPicForTransform {
+    transform: translate(350px,50px);
+    -webkit-transform: translate(350px,50px); /** Safari & Chrome **/
+    -o-transform: translate(350px,50px); /** Opera **/
+    -moz-transform: translate(350px,50px); /** Firefox **/
+    cursor:wait;
+}
+#ElephantMover{
+    height:300px;
+    width:300px;
+    background-color:darkorange;
+    color:aqua;
+}
+[role="main"] {
+    border: solid 2px blueviolet;
+    display: inline-block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}

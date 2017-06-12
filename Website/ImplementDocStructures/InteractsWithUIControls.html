@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Exam Sandbox</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="Style/Main.css" />
+
+
+</head>
+<body>
+
+    <header>
+        <div class="pageHeader">
+            <hgroup>
+                <h1>70-480 HTML5, CSS3, Javascript</h1>
+                <h2>Sand Box</h2>
+            </hgroup>
+        </div>
+    </header>
+    <nav>
+        <div id="mainNav">
+            <ul>
+                <li>
+                    Implement and manipulate document structures and objects
+                </li>
+                <li>
+                    Implement program flow
+                </li>
+                <li>
+                    Access and secure data
+                </li>
+                <li>
+                    Access and secure data
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+        <nav>
+            <div id="subNav">
+                <ul>
+                    <li>
+                        Create the Document Structure
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Write Code That interacts with UI
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <!---------------------------MAIN------------------------->
+
+
+    <div role="main">
+
+        <button onclick="ToogleHeading()"> Show/Hide Heading</button>
+        <div id="Heading">
+            <header>
+                <h1>Write Code That interacts with UI</h1>
+            </header>
+        </div>
+        <div id="ArticleDisplay"></div>
+        <br />
+        <div>
+            Heading: <input type="text" id="ArticleHeading" /> <br /><br />
+            Text: <textarea id="ArticleContent"></textarea> <br /><br />
+            <button id="AddEntry" onclick="AddEntry()">Add Entry</button>
+            <button id="RemoveLastEntry" onclick="RemoveLastEntry()">Remove Last</button>
+            <button id="DeleteAllEntries" onclick="DeleteAllEntries()">Delete All Entries</button>
+        </div> 
+
+        <br />
+        <header><h3>Log</h3></header>
+        <ol id="LogOfTransactions">
+
+        </ol>
+
+        <div>
+            <article>
+                <header><h2>Video</h2></header>
+                <p> Video added although not all video formats supported the following are supproted on most:</p>
+                <ul>
+                    <li>.ogy</li>
+                    <li>.webm</li>
+                    <li>.mp4</li>
+                </ul>
+
+                <p>Example of video:</p>
+
+                <video height="500" width="500" controls>
+                    <source src="Video/20160521_101519.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                </video>
+                <p>&lt;video height="500px" width="500px" controls&gt;</p>
+                <p>&lt;source src="Video/20160521_101519.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' /&gt;</p>
+                <p>&lt;/video&gt;</p>
+            </article>
+
+            <article>
+                <header><h2>Audio</h2></header>
+                <p> Similar to video,  formats supported the following are supproted on most:</p>
+                <ul>
+                    <li>.oga</li>
+                    <li>.ogg</li>
+                    <li>.mp3</li>
+                    <li>.mp4</li>
+                    <li>.wav</li>
+                </ul>
+
+                <p>Example of audio:</p>
+
+                <audio controls>
+                    <source src="Audio/Wrong.m4a" type='audio/mpeg; codecs="mp3"' controls/>
+                </audio>
+            </article>
+            <hr />
+            <article>
+                <header><h2>Canvas</h2></header>
+                <p>Canvas used to draw graphic on. Canvas appear even if browser is unsupported</p>
+                <p>Blank Canvas:</p>
+                <canvas height="300" width="300" id="BlankCanvas" class="BasicCanvas"></canvas>
+
+                <p>Canvas For Red Square:</p>
+                <canvas height="300" width="300" id="CanvasForSquare" class="BasicCanvas"></canvas><br />
+                <button onclick="CreateSquare()">Create the Square</button>
+
+                <p>Canvas For Gradient Square:</p>
+                <canvas height="300" width="300" id="CanvasForGradientSquare" class="BasicCanvas"></canvas><br />
+                <button onclick="CreateGradientSquare()">Create the Square</button>
+
+                <p>Canvas For Thick Lines:</p>
+                <canvas height="300" width="300" id="CreateThickLinedSquare" class="BasicCanvas"></canvas><br />
+                <button onclick="CreateThickLinedSquare()">Create the Square</button>
+
+                <p>Canvas For Drawing Lines:</p>
+                <canvas height="300" width="300" id="CreateDrawing" class="BasicCanvas"></canvas><br />
+                <button onclick="CreateDrawing()">Create the Drawing</button>
+            </article>
+            <hr />
+            <article>
+                <header><h2>SVG</h2></header>
+
+                <p>SVG uses XML to dispaly image. More demanding to scale up than Canvas</p>
+                <p>Example</p>
+                <svg width="500" height="300" xmlns="http://www.w3.org/2000/svg" viewBox="0 50 1000 175">
+                    <path d="m50 50 l100 100 100 100 100 -100 -100 -100 -100 0 300 -300 z" fill="blue" id="TestSVG" />
+                </svg>
+
+                <p> viewBox tag sets the scope of picture and can scale it up or down. 
+                SVG element contains path and circle elements which have the drawing on.
+                These are very complex. Best to google when needed.</p>
+
+            </article>
+</div>
+    </div>
+
+
+    <!-------------------------------------------------------->
+
+    <aside>
+        <div class="sideAdvert">
+            Buy stuff!
+        </div>
+    </aside>
+        <footer>
+            <div class="pageFooter">
+            <p> Created by: Christian Brown</p>
+            <p> CB (c)</p>
+            </div>
+
+        </footer>
+
+    <script src="JS/Base.js">    </script>
+    <script src="JS/InteractsWithUIControls.js">    </script>
+
+</body>
+</html>

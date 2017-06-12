@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Exam Sandbox</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="/Style/Main.css" />
+
+
+</head>
+<body>
+
+    <header>
+        <div class="pageHeader">
+            <hgroup>
+                <h1>70-480 HTML5, CSS3, Javascript</h1>
+                <h2>Sand Box</h2>
+            </hgroup>
+        </div>
+    </header>
+    <nav>
+        <div id="mainNav">
+            <ul>
+                <li>
+                    Implement and manipulate document structures and objects
+                </li>
+                <li>
+                    Implement program flow
+                </li>
+                <li>
+                    Access and secure data
+                </li>
+                <li>
+                    Access and secure data
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+        <nav>
+            <div id="subNav">
+                <ul>
+                    <li>
+                        Create the Document Structure
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Write Code That interacts with UI
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <!---------------------------MAIN------------------------->
+
+
+    <div role="main">
+        <article>
+            <header><h1>Change The location of an element</h1></header>
+
+            <p>Javascript can be used to change the location of an element. For example:</p>
+            <img src="\Images\Elephant.jpg" height="200" width="300" id="ElephantPic" /> <br />
+            <button onclick="MoveElephant('Left')">Move Left</button><button onclick="MoveElephant('Right')">Move Right</button>
+        </article>
+
+        <article>
+            <header><h1>Apply A Transform</h1></header>
+
+            <p>Used for moving objects. Example:</p>
+            <img src="\Images\Elephant.jpg" height="200" width="300" class="ElephantPicForTransform Animate" /> <br />
+            <div id="ElephantMover">Hover Here to move Elephant</div>
+        </article>
+
+        <article>
+            <header><h1>Show and Hide elements</h1></header>
+
+            <p>Display: none - takes up no space. Visibility: hidden takes up space Example:</p>
+            <img src="\Images\Elephant.jpg" height="200" width="300" id="ElephantPicDisplay" /> 
+            <button onclick="ToogleElephantDisplay()"> Toogle Display</button><br />
+            <img src="\Images\Elephant.jpg" height="200" width="300" id="ElephantPicVisibility" />
+            <button onclick="ToogleElephantVisibility()"> Toogle Visibility</button><br />
+        </article>
+   </div>
+
+
+    <!-------------------------------------------------------->
+
+    <aside>
+        <div class="sideAdvert">
+            Buy stuff!
+        </div>
+    </aside>
+        <footer>
+            <div class="pageFooter">
+            <p> Created by: Christian Brown</p>
+            <p> CB (c)</p>
+            </div>
+
+        </footer>
+
+    <script src="/JS/Base.js">    </script>
+    <script src="/JS/StylingProgramatically.js">    </script>
+
+</body>
+</html>

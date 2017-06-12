@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Exam Sandbox</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="/Style/Main.css" />
+
+
+</head>
+<body>
+
+    <header>
+        <div class="pageHeader">
+            <hgroup>
+                <h1>70-480 HTML5, CSS3, Javascript</h1>
+                <h2>Sand Box</h2>
+            </hgroup>
+        </div>
+    </header>
+    <nav>
+        <div id="mainNav">
+            <ul>
+                <li>
+                    Implement and manipulate document structures and objects
+                </li>
+                <li>
+                    Implement program flow
+                </li>
+                <li>
+                    Access and secure data
+                </li>
+                <li>
+                    Access and secure data
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+        <nav>
+            <div id="subNav">
+                <ul>
+                    <li>
+                        Structure UI using Semantic Markup
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <!---------------------------MAIN------------------------->
+
+
+    <div role="main">
+      <article>
+          <section>
+              <header>
+                  <h3>SUMMARY OF MARK UP TAGS</h3>
+              </header>
+
+              <p>Semantic mark up is used for:</p>
+              <ul>
+                  <li>Search Engines</li>
+                  <li>Non visual desktop access (Daredevil's PC)</li>
+                  <li>Other Web Crealers</li>
+              </ul>
+              <p> It is invisible on the page and <q>divs</q> should be used for css.</p>
+              <p>
+                  Brief Summary of all tags:
+              </p>
+              <dl>
+                  <dt>&lt;header&gt;</dt>
+                  <dd>Area at top of element/page, more word header and footer than <q>Heading</q>.</dd>
+
+                  <dt>&lt;footer&gt;</dt>
+                  <dd>Area at bottom of element/page, opposite of header. Header not needed for footer.</dd>
+
+                  <dt>&lt;nav&gt;</dt>
+                  <dd>Major series of links. Not ite map in footer.</dd>
+
+                  <dt>&lt;aside&gt;</dt>
+                  <dd>Content not directly related to content of element the Aside is in. Example advert in main page or side note in article.</dd>
+
+                  <dt>&lt;section&gt;</dt>
+                  <dd>Part of page/article with its own <q>header</q>.</dd>
+
+                  <dt>&lt;article&gt;</dt>
+                  <dd>Content that can stand on it's own and be moved to other locations and still make sense. e.g googles front page summarys picks these up.</dd>
+              </dl>              
+          </section>
+          <hr />
+          <section>
+              <header>
+                  <h3>USING ROLES</h3>
+              </header>
+
+              <p>Roles are used for to provide meaning to screen readers for accessibility purposes.</p>
+              <p>Example of roles:</p>
+              <dl>
+                  <dt>main</dt>
+                  <dd>The main part of a page. Max 1 per page</dd>
+                  <dt>form</dt>
+                  <dd>Area containing input forms</dd>
+                  <dt>navigation</dt>
+                  <dd>Area with navigational links</dd>
+              </dl>
+              <p>More at: <a href="https://www.w3.org/TR/wai-aria/roles#role_definitions"> https://www.w3.org/TR/wai-aria/roles#role_definitions </a></p>
+          </section>
+          <hr />
+          <section>
+              <header>
+                  <h3>Annotating content</h3>
+              </header>
+              <p>These tags will have both an imapact on the page and have meaning for search engines.</p>
+              <p>Example of elements annotating text:</p>
+              <dl>
+                  <dt>&lt;b&gt;</dt>
+                  <dd>Puts a word in bold. No additional outcome. Example: That's a <b>computer</b></dd>
+                  <dt>&lt;strong&gt;</dt>
+                  <dd>Item in bold and importance put on the contents. Can be nested inside &lt;strong&gt; to show more importance of sections. Example: <strong>No</strong>, don't do that! </dd>
+                  <dt>&lt;i&gt;</dt>
+                  <dd>Used to display different voice or mood and a few other reasons. No extra meaning like &lt;b&gt;. Example: <i>Whose idea was that?</i></dd>
+                  <dt>&lt;em&gt;</dt>
+                  <dd>Used for emphatic stress. Example: I will <em>make</em> it legal</dd>
+                  <dt>&lt;abbr&gt;</dt>
+                  <dd>Abbreviation and acronyms Example: <abbr title="Laughing Out Loud">LOL</abbr></dd>
+                  <dt>&lt;address&gt;</dt>
+                  <dd>Email address or postal address of an author/owner of content. Not billinging address etc. Example: <address><a href="email:christiankennethbrown@gmail.com">christiankennethbrown@gmail.com</a></address></dd>
+                  <dt>&lt;q&gt;</dt>
+                  <dd>Used for quotes Example: <q>They told me he fixed it!</q></dd>
+                  <dt>&lt;blockquotes&gt;</dt>
+                  <dd>Used for block quotes Example: <blockquote>Landos not a system. He's a man. Lando Clrissian. He's a card player, gambler, scoundrel. You'd like him.</blockquote></dd>
+                  <dt>&lt;cite&gt;</dt>
+                  <dd>Name of the work the quote came from. Example: Han Solo &lt;cite&gt;<cite>The Empire Strikes Back</cite>&lt;/cite&gt;</dd> 
+                  <dt>&lt;pre&gt;</dt>
+                  <dd>Keep whitespace Example: <pre> There is still a chance to save       Haaaaaaan</pre> <br />
+                  Often used with &lt;code&gt;</dd>                  
+              </dl>
+          </section>
+          <hr />
+          <section>
+              <header>
+                  <h3>Ordered Lists</h3>
+              </header>
+              <p>New bits to orders lists are <q>type</q>, <q>start</q> and <q>reversed</q></p>
+              <p>&lt;ol type="A" start="1"&gt;</p>
+              <ol type="A" start="1">
+                  <li>Han</li>
+                  <li>Leia</li>
+                  <li>Luke</li>
+              </ol>
+              <p>&lt;ol type="A" start="10" reversed&gt;</p>
+              <ol type="A" start="10" reversed>
+                  <li>Han</li>
+                  <li>Leia</li>
+                  <li>Luke</li>
+              </ol>
+              <p>&lt;ol type="i" start="1" &gt;</p>
+              <ol type="i" start="1" reversed>
+                  <li>Han</li>
+                  <li>Leia</li>
+                  <li>Luke</li>
+              </ol>              
+          </section>
+          <section>
+              <header>
+                  <h3>Description Lists</h3>
+              </header>
+              <p>Above is an example of description lists. Uses: dl - Description List, dt - Define Description Term, dd - Describe Description term</p>
+
+          </section>
+</article>
+    </div>
+
+
+    <!-------------------------------------------------------->
+
+    <aside>
+        <div class="sideAdvert">
+            Buy stuff!
+        </div>
+    </aside>
+        <footer>
+            <div class="pageFooter">
+            <p> Created by: Christian Brown</p>
+            <p> CB (c)</p>
+            </div>
+
+        </footer>
+
+    <script src="/JS/Base.js">    </script>
+
+</body>
+</html>
